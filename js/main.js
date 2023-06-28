@@ -4,14 +4,14 @@ const arrayBanners = [
         url: 'assets/banners/1.jpg',
         alt: 'landscape'
     },
-    {
-        url: 'assets/banners/2.jpg',
-        alt: 'landscape'
-    },
-    {
-        url: 'assets/banners/3.jpg',
-        alt: 'landscape'
-    },
+    // {
+    //     url: 'assets/banners/2.jpg',
+    //     alt: 'landscape'
+    // },
+    // {
+    //     url: 'assets/banners/3.jpg',
+    //     alt: 'landscape'
+    // },
 ];
 
 const fragmentBanners = document.createDocumentFragment();
