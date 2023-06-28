@@ -17,6 +17,9 @@ const arrayBanners = [
 const fragmentBanners = document.createDocumentFragment();
 
 const pasarBanners = () => {
+
+    // const cambiarBanners = Math.floor(Math.random(item, index)) No sé cómo seguir.
+
     arrayBanners.forEach((item) => {
         const cajaBanners = document.createElement('DIV');
         const banner = document.createElement('IMG');
