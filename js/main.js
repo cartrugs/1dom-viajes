@@ -12,6 +12,26 @@ const arrayBanners = [
     url: "assets/banners/3.jpg",
     alt: "landscape",
   },
+  {
+    url: "assets/banners/4.jpg",
+    alt: "landscape",
+  },
+  {
+    url: "assets/banners/5.jpg",
+    alt: "landscape",
+  },
+  {
+    url: "assets/banners/6.jpg",
+    alt: "landscape",
+  },
+  {
+    url: "assets/banners/7.jpg",
+    alt: "landscape",
+  },
+  {
+    url: "assets/banners/8.jpg",
+    alt: "landscape",
+  },
 ];
 const fragmentBanners = document.createDocumentFragment();
 const recomendados = document.querySelector("#recomendados");
@@ -40,17 +60,15 @@ const destinos = document.querySelector("#destinos");
 const destinoPosible = ["Europa", "América", "África"];
 const fragmentDestinos = document.createDocumentFragment();
 
+
 const pasarBanners = () => {
+  const cambiarBanners = arrayBanners[Math.floor(Math.random() * arrayBanners.length)];
   const cajaBanners = document.createElement("DIV");
-  const banner = document.createElement("IMG");
-  banner.src = arrayBanners.url;
-//   banner.alt = ;
-  cajaBanners.append(banner);
+  const imagenBanner = document.createElement("IMG");
+  imagenBanner.src = cambiarBanners.url, cambiarBanners.alt;
+  cajaBanners.append(imagenBanner);
   fragmentBanners.append(cajaBanners);
   bienvenidos.append(fragmentBanners);
-
-  const cambiarBanners =
-    arrayBanners[Math.floor(Math.random() * arrayBanners.length)];
 };
 
 const meterFotos = () => {
@@ -85,8 +103,6 @@ const meterFotos = () => {
   recomendados.append(fragment);
 };
 
-meterFotos();
-
 const inputsViajes = () => {
   console.log(inputsViajes);
   destinoPosible.forEach((item) => {
@@ -99,5 +115,6 @@ const inputsViajes = () => {
   destinos.append(fragment);
 };
 
+pasarBanners();
 inputsViajes();
-pasarBanners()
+meterFotos();
