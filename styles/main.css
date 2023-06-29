@@ -56,6 +56,10 @@ img {
     box-shadow: 0px 1px 1px rgba(119, 119, 119, 0.5);
 }
 
+.sombraActiva {
+    box-shadow: 0px 1px 1px rgba(208, 16, 64, 0.5);
+}
+
 .fluid,
 .cards {
     margin-bottom: 10px;

@@ -60,6 +60,7 @@ const destinos = document.querySelector("#destinos");
 const destinoPosible = ["Europa", "América", "África"];
 const fragmentDestinos = document.createDocumentFragment();
 
+const sombraActiva= document.querySelector("cajaFotos");
 
 const pasarBanners = () => {
   const cambiarBanners = arrayBanners[Math.floor(Math.random() * arrayBanners.length)];
@@ -86,8 +87,6 @@ const meterFotos = () => {
 
     const cajas = document.createElement("DIV");
 
-    console.log(cajas);
-
     const fotos = document.createElement("IMG");
     fotos.src = item.url;
 
@@ -101,6 +100,12 @@ const meterFotos = () => {
   });
 
   recomendados.append(fragment);
+};
+
+const cambiarSombra = () => {
+  cajaFotos.addEventListener('mouseenter', (ev) => {
+    cajaFotos.classList.add("sombraActiva")
+  });
 };
 
 const inputsViajes = () => {
@@ -118,3 +123,4 @@ const inputsViajes = () => {
 pasarBanners();
 inputsViajes();
 meterFotos();
+cambiarSombra();
