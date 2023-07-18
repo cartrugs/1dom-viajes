@@ -57,7 +57,7 @@ img {
 }
 
 .sombraActiva {
-    box-shadow: 0px 1px 1px rgba(208, 16, 64, 0.5);
+    box-shadow: 0px 5px 5px rgba(208, 16, 64, 0.5);
 }
 
 .fluid,
